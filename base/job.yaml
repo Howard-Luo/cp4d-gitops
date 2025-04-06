@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  generateName: cloud-pak-deployer-job-
+  name: cloud-pak-deployer-job
   namespace: cloud-pak-deployer
 spec:
   # ttlSecondsAfterFinished: 600
