@@ -1,0 +1,11 @@
+resources:
+  - ../../base
+
+configMapGenerator:
+  - name: cpd-configmap
+    files:
+      - ocp-existing-ocp-auto.yaml=templates/ocp-existing-ocp-auto.yaml
+      - cp4d-503.yaml=templates/cp4d-503.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true

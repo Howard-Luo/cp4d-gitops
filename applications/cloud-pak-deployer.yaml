@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cloud-pak-deployer
+  namespace: argocd
+spec:
+  destination:
+    namespace: cloud-pak-deployer
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    repoURL: https://github.com/Howard-Luo/cp4d-gitops.git
+    targetRevision: HEAD
+    path: overlays/dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
