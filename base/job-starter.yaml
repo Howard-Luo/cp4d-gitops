@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: cloud-pak-deployer-job
+  name: cloud-pak-deployer-starter
   namespace: cloud-pak-deployer
 spec:
   # backoffLimit: 0

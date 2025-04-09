@@ -57,7 +57,7 @@ echo "Secret updated successfully."
 
 
 echo "Applying the Argo CD Application manifest..."
-oc apply -f ./applications/cloud-pak-deployer.yaml -n openshift-gitops
+oc apply -f ./application/cloud-pak-deployer.yaml -n openshift-gitops
 echo "Argo CD Application bootstrapped successfully."
 
 
