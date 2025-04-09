@@ -63,7 +63,7 @@ echo "Argo CD Application bootstrapped successfully."
 
 echo "Retrieving Argo CD dashboard information..."
 ARGO_ROUTE=$(oc get route openshift-gitops-server -n openshift-gitops -o jsonpath='{.spec.host}')
-ARGO_PASS=$(oc get secret argocd-secret -n openshift-gitops -o jsonpath="{.data.admin\.password}" | base64 -d)
+ARGO_PASS=$(oc get secret openshift-gitops-cluster -n openshift-gitops -o jsonpath="{.data.admin\.password}" | base64 -d)
 if [ -z "${ARGO_ROUTE}" ] || [ -z "${ARGO_PASS}" ]; then
   echo "Error: Could not retrieve Argo CD dashboard URL or admin password. Please check your Argo CD installation."
   exit 1
