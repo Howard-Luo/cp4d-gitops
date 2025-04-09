@@ -1,0 +1,6 @@
+resources:
+  - clusterrolebinding.yaml
+  - namespace.yaml
+  - pod-starter.yaml
+  - rolebinding.yaml
+  - serviceaccount.yaml
