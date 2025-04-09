@@ -1,5 +1,0 @@
-resources:
-  # - namespace.yaml
-  - job.yaml
-  # - secret.yaml
-  - status-pvc.yaml 

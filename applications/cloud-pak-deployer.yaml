@@ -4,14 +4,14 @@ metadata:
   name: cloud-pak-deployer
   namespace: openshift-gitops
 spec:
-  destination:
-    namespace: cloud-pak-deployer
-    server: https://kubernetes.default.svc
   project: default
   source:
     repoURL: https://github.com/Howard-Luo/cp4d-gitops.git
     targetRevision: HEAD
     path: overlays/dev
+  destination:
+    namespace: cloud-pak-deployer
+    server: https://kubernetes.default.svc
   syncPolicy:
     automated:
       prune: true

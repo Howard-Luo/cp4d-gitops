@@ -3,9 +3,9 @@ resources:
 
 configMapGenerator:
   - name: cpd-configmap
+    namespace: cloud-pak-deployer
     files:
-      - ocp-existing-ocp-auto.yaml=templates/ocp-existing-ocp-auto.yaml
-      - cp4d-503.yaml=templates/cp4d-503.yaml
+      - cpd-config.yaml
 
 generatorOptions:
   disableNameSuffixHash: true
