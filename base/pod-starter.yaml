@@ -4,7 +4,7 @@ metadata:
   name: cloud-pak-deployer-job
   namespace: cloud-pak-deployer
 spec:
-  backoffLimit: 0
+  # backoffLimit: 0
   template:
     metadata:
       labels:
