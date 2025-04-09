@@ -25,12 +25,15 @@ sed -i.bak -E "s|(repoURL:[[:space:]]+)[^[:space:]]+|\1${REPO_URL}|" ./applicati
 rm -f ./applications/cloud-pak-deployer.yaml.bak
 echo "Updated applications/cloud-pak-deployer.yaml with repoURL: $REPO_URL"
 
-
 read -rp "Would you like to commit and push this change now? (y/n): " PUSH_NOW
 if [[ "$PUSH_NOW" =~ ^[Yy]$ ]]; then
-  git add applications/cloud-pak-deployer.yaml
-  git commit -m "Update configuration for Argo CD application"
-  git push
+  git add .
+  if git diff --cached --quiet; then
+    echo "No changes to commit. Your repository is up-to-date."
+  else
+    git commit -m "Update configuration for Argo CD application"
+    git push
+  fi
 fi
 
 
