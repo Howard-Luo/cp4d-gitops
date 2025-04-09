@@ -2,7 +2,7 @@ resources:
   - ../../base
 
 configMapGenerator:
-  - name: cpd-configmap
+  - name: cloud-pak-deployer-config
     namespace: cloud-pak-deployer
     files:
       - cpd-config.yaml
