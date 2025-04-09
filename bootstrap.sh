@@ -21,9 +21,9 @@ echo "Login verified: $(oc whoami)"
 
 
 read -rp "Enter the Argo CD application source Git repo URL: " REPO_URL
-sed -i.bak -E "s|(repoURL:[[:space:]]+)[^[:space:]]+|\1${REPO_URL}|" ./applications/cloud-pak-deployer.yaml
-rm -f ./applications/cloud-pak-deployer.yaml.bak
-echo "Updated applications/cloud-pak-deployer.yaml with repoURL: $REPO_URL"
+sed -i.bak -E "s|(repoURL:[[:space:]]+)[^[:space:]]+|\1${REPO_URL}|" ./application/cloud-pak-deployer.yaml
+rm -f ./application/cloud-pak-deployer.yaml.bak
+echo "Updated application/cloud-pak-deployer.yaml with repoURL: $REPO_URL"
 
 read -rp "Would you like to commit and push this change now? (y/n): " PUSH_NOW
 if [[ "$PUSH_NOW" =~ ^[Yy]$ ]]; then
