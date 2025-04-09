@@ -40,6 +40,11 @@ fi
 read -srp "Enter the IBM Container Entitlement Key (from https://myibm.ibm.com/products-services/containerlibrary): " ENTITLEMENT_KEY
 echo ""
 
+if ! oc get namespace cloud-pak-deployer &>/dev/null; then
+  echo "Namespace 'cloud-pak-deployer' not found. Creating it now..."
+  oc create namespace cloud-pak-deployer || { echo "Error: Failed to create namespace 'cloud-pak-deployer'."; exit 1; }
+  echo "Namespace 'cloud-pak-deployer' created."
+fi
 
 echo "Updating the cloud-pak-entitlement-key secret..."
 if oc get secret cloud-pak-entitlement-key -n cloud-pak-deployer &>/dev/null; then
