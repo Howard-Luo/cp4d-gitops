@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   labels:
     app: cloud-pak-deployer-start
-  generateName: cloud-pak-deployer-start-
+  name: cloud-pak-deployer-start-
   namespace: cloud-pak-deployer
 spec:
   containers:
