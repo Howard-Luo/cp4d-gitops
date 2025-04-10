@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cloud-pak-deployer
+  name: cp4d-deployment
   namespace: openshift-gitops
 spec:
   project: default
   source:
-    repoURL: https://github.com/Howard-Luo/cp4d-gitops.git
+    repoURL: <repoURL>
     targetRevision: HEAD
     path: overlays/dev
   destination:
