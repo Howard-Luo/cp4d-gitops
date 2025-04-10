@@ -3,6 +3,9 @@ kind: Job
 metadata:
   name: cloud-pak-deployer-starter
   namespace: cloud-pak-deployer
+  annotations:
+      argocd.argoproj.io/hook: PostSync
+      argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   # backoffLimit: 0
   template:
