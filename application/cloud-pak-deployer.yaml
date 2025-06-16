@@ -18,6 +18,8 @@ spec:
       selfHeal: true
     syncOptions:
     - CreateNamespace=true
-    - DisableAppInstanceLabel=true
-    - RespectIgnoreDifferences=true
-    - ResourceTrackingMethod=annotation
+  ignoreDifferences:
+    - group: '*'
+      kind: '*'
+      jsonPointers:
+        - /metadata/labels/app.kubernetes.io~1instance
