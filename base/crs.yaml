@@ -1,0 +1,460 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: olm-utils-cm
+  labels:
+    app.kubernetes.io/name: olm-utils
+data:
+  release_version: 5.1.2
+  release_components_meta: |-
+    analyticsengine:
+        case_version: 10.2.0
+        cr_version: 5.1.2
+        csv_version: 7.2.0
+        sub_channel: v7.2
+    bigsql:
+        case_version: 12.2.0
+        cr_version: 7.8.2
+        csv_version: 12.2.0
+        sub_channel: v12.2
+    canvasbase:
+        case_version: 10.2.0
+        cr_version: 10.2.0
+        csv_version: 10.2.0
+        sub_channel: v10.2
+    ccs:
+        case_version: 10.2.0
+        cr_version: 10.2.0
+        csv_version: 10.2.0
+        sub_channel: v10.2
+    cognos_analytics:
+        case_version: 27.2.0
+        cr_version: 27.2.0
+        csv_version: 27.2.0
+        sub_channel: v27.2
+    cpd_platform:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 6.1.2
+        sub_channel: v6.1
+    cpfs:
+        case_version: 4.11.0
+        csv_version: 4.11.0
+        sub_channel: v4.11
+    dashboard:
+        case_version: 3.5.0
+        cr_version: 5.1.2
+        csv_version: 3.5.0
+        sub_channel: v3.5
+    data_governor:
+        case_version: 6.2.1
+        csv_version: 6.2.1
+        sub_channel: v6.2
+    datagate:
+        case_version: 9.2.0
+        cr_version: 7.2.0
+        csv_version: 7.2.0
+        sub_channel: v7.2
+    datalineage:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 5.1.2
+        sub_channel: v5.3
+    dataproduct:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 1.1.2
+        sub_channel: v6.2
+    datarefinery:
+        case_version: 10.2.0
+        cr_version: 10.2.0
+        csv_version: 10.2.0
+        sub_channel: v10.2
+    datastage_ent:
+        case_version: 9.2.0
+        cr_version: 5.1.2
+        csv_version: 7.2.0
+        sub_channel: v7.2
+    datastage_ent_plus:
+        case_version: 9.2.0
+        cr_version: 5.1.2
+        csv_version: 7.2.0
+        sub_channel: v7.2
+    db2aaservice:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 7.2.0
+        sub_channel: v7.2
+    db2oltp:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 7.2.0
+        sub_channel: v7.2
+    db2u:
+        case_version: 7.1.3
+        csv_version: 7.2.0
+        sub_channel: v7.2
+    db2wh:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 7.2.0
+        sub_channel: v7.2
+    dmc:
+        case_version: 8.6.0
+        cr_version: 5.1.2
+        csv_version: 5.6.0
+        sub_channel: v5.6
+    dods:
+        case_version: 10.2.0
+        cr_version: 10.2.0
+        csv_version: 10.2.0
+        sub_channel: v10.2
+    dp:
+        case_version: 9.2.0
+        cr_version: 5.1.2
+        csv_version: 9.2.0
+        sub_channel: v9.2
+    dpra:
+        case_version: 1.18.0
+        cr_version: 1.18.0
+        csv_version: 1.18.0
+        sub_channel: v1.18
+    dv:
+        case_version: 6.2.0
+        cr_version: 3.1.2
+        csv_version: 6.2.0
+        sub_channel: v6.2
+    edb_cp4d:
+        case_version: 5.12.0
+        cr_version: 5.12.0
+        csv_version: 5.12.0
+        sub_channel: v5.12
+    factsheet:
+        case_version: 5.2.0
+        cr_version: 5.1.2
+        csv_version: 5.2.0
+        sub_channel: v5.2
+    fdb_k8s:
+        csv_version: 5.1.2
+        sub_channel: v5.1
+    hee:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 5.1.2
+        sub_channel: v5.12
+    ibm-cert-manager:
+        case_version: 4.2.10
+        csv_version: 4.2.10
+        sub_channel: v4.2
+    ibm-licensing:
+        case_version: 4.2.10
+        csv_version: 4.2.10
+        sub_channel: v4.2
+    ibm_events_operator:
+        case_version: 5.1.0
+        csv_version: 5.1.0
+        sub_channel: v5.1
+    ibm_neo4j:
+        case_version: 1.1.2
+        cr_version: 1.1.2
+        csv_version: 1.1.2
+        sub_channel: v2.2
+    ibm_redis_cp:
+        case_version: 1.2.6
+        csv_version: 1.2.6
+        sub_channel: v1.2
+    ibm_swhcc:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 5.1.2
+        sub_channel: v5.1
+    ikc_premium:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 5.1.2
+        sub_channel: v6.2
+    ikc_standard:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 5.1.2
+        sub_channel: v6.2
+    informix:
+        case_version: 8.4.0
+        csv_version: 8.4.0
+        sub_channel: v8.4
+    informix_cp4d:
+        case_version: 8.4.0
+        cr_version: 8.4.0
+        csv_version: 8.4.0
+        sub_channel: v8.4
+    mantaflow:
+        case_version: 1.25.2
+        cr_version: 42.10.0
+        csv_version: 1.25.2
+        sub_channel: v1.25
+    match360:
+        case_version: 4.5.0
+        cr_version: 4.5.2
+        csv_version: 4.5.0
+        sub_channel: v4.5
+    mongodb:
+        case_version: 5.12.0
+        csv_version: 1.31.0
+        sub_channel: stable
+    mongodb_cp4d:
+        case_version: 5.12.0
+        cr_version: 5.12.0
+        csv_version: 5.12.0
+        sub_channel: v5.12
+    opencontent_elasticsearch:
+        case_version: 1.1.2630
+        cr_version: 1.1.2630
+        csv_version: 1.1.2630
+        sub_channel: v1.1
+    opencontent_etcd:
+        case_version: 2.0.49
+        csv_version: 1.0.39
+    opencontent_fdb:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 5.1.2
+        sub_channel: v5.1
+    opencontent_opensearch:
+        case_version: 1.1.1714
+        cr_version: 1.1.1714
+        csv_version: 1.1.1714
+        sub_channel: v1.1
+    opencontent_rabbitmq:
+        case_version: 1.0.47
+        csv_version: 1.0.38
+        sub_channel: v1.0
+    opencontent_redis:
+        case_version: 1.6.11
+        csv_version: 1.6.11
+        sub_channel: v1.6
+    openpages:
+        case_version: 8.2.0
+        cr_version: 9.4.2
+        csv_version: 8.2.0
+        sub_channel: v8.2
+    openpages_instance:
+        cr_version: 9.4.2
+    openscale:
+        case_version: 8.2.0
+        cr_version: 5.1.2
+        csv_version: 7.2.0
+        sub_channel: v7.2
+    planning_analytics:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 5.1.2
+        sub_channel: v9.2
+    postgresql:
+        case_version: 4.33.0
+        csv_version: 1.22.8
+        sub_channel: stable-v1.22
+    productmaster:
+        case_version: 7.1.0
+        cr_version: 7.1.0
+        csv_version: 7.1.0
+        sub_channel: v7.1
+    productmaster_instance:
+        cr_version: 7.1.0
+    replication:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 5.2.0
+        sub_channel: v5.2
+    rstudio:
+        case_version: 10.2.0
+        cr_version: 10.2.0
+        csv_version: 10.2.0
+        sub_channel: v10.2
+    scheduler:
+        case_version: 1.42.0
+        cr_version: 1.42.0
+        csv_version: 1.42.0
+        sub_channel: v1.42
+    spss:
+        case_version: 10.2.0
+        cr_version: 10.2.0
+        csv_version: 10.2.0
+        sub_channel: v10.2
+    streamsets:
+        case_version: 3.0.0
+        cr_version: 6.0.0
+        csv_version: 6.0.2
+        sub_channel: v6.0.2
+    syntheticdata:
+        case_version: 10.2.0
+        cr_version: 10.2.0
+        csv_version: 10.2.0
+        sub_channel: v10.2
+    udp:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 5.1.2
+        sub_channel: v5.1
+    voice_gateway:
+        case_version: 1.7.0
+        cr_version: 1.7.0
+        csv_version: 1.7.0
+        sub_channel: v1.7
+    watson_assistant:
+        case_version: 5.5.0
+        cr_version: 5.1.2
+        csv_version: 5.5.0
+        sub_channel: v5.5
+    watson_discovery:
+        case_version: 9.2.0
+        cr_version: 5.1.2
+        csv_version: 9.2.0
+        sub_channel: v9.2
+    watson_gateway:
+        case_version: 2.0.41
+        csv_version: 1.0.38
+    watson_speech:
+        case_version: 9.2.0
+        cr_version: 5.1.2
+        csv_version: 9.2.0
+        sub_channel: v9.2
+    watsonx_ai:
+        case_version: 10.2.0
+        cr_version: 10.2.0
+        csv_version: 10.2.0
+        sub_channel: v10.2
+    watsonx_ai_ifm:
+        case_version: 10.2.0
+        cr_version: 10.2.0
+        csv_version: 10.2.0
+        sub_channel: v10.2
+    watsonx_bi_assistant:
+        case_version: 2.2.0
+        cr_version: 2.2.0
+        csv_version: 2.2.0
+        sub_channel: v2.2
+    watsonx_data:
+        case_version: 4.2.0
+        cr_version: 2.1.2
+        csv_version: 4.2.0
+        sub_channel: v4.2
+    watsonx_governance:
+        case_version: 3.2.0
+        cr_version: 2.1.2
+        csv_version: 3.2.0
+        sub_channel: v3.2
+    watsonx_orchestrate:
+        case_version: 5.3.0
+        cr_version: 5.3.0
+        csv_version: 5.3.0
+        sub_channel: v5.3
+    wca:
+        case_version: 1.2.0
+        cr_version: 5.1.2
+        csv_version: 1.2.0
+        sub_channel: v1.2
+    wca_ansible:
+        case_version: 2.2.0
+        cr_version: 5.1.2
+        csv_version: 2.2.0
+        sub_channel: v2.2
+    wca_base:
+        case_version: 2.2.0
+        cr_version: 5.1.2
+        csv_version: 2.2.0
+        sub_channel: v2.2
+    wca_z:
+        case_version: 2.2.0
+        cr_version: 5.1.2
+        csv_version: 2.2.0
+        sub_channel: v2.2
+    wca_z_ce:
+        case_version: 5.1.2
+        cr_version: 2.4.20
+        csv_version: 2.4.20
+        sub_channel: v2.4
+    wkc:
+        case_version: 5.1.2
+        cr_version: 5.1.2
+        csv_version: 2.1.2
+        sub_channel: v7.2
+    wml:
+        case_version: 10.2.0
+        cr_version: 5.1.2
+        csv_version: 7.2.0
+        sub_channel: v7.2
+    ws:
+        case_version: 10.2.0
+        cr_version: 10.2.0
+        csv_version: 10.2.0
+        sub_channel: v10.2
+    ws_pipelines:
+        case_version: 10.2.0
+        cr_version: 5.1.2
+        csv_version: 10.2.0
+        sub_channel: v10.2
+    ws_runtimes:
+        case_version: 10.2.0
+        cr_version: 10.2.0
+        csv_version: 10.2.0
+        sub_channel: v10.2
+    zen:
+        case_version: 6.1.2
+        cr_version: 6.1.2
+        csv_version: 6.1.2
+        sub_channel: v6.1
+
+---
+apiVersion: openpages.cpd.ibm.com/v1
+kind:  OpenPagesService
+metadata:
+  name: openpagesservice-cr
+  namespace: cpd
+  labels:
+    icpdsupport/addOnId: openpages
+    app.kubernetes.io/instance: openpagesservice-cr
+    app.kubernetes.io/managed-by: olm-utils
+    app.kubernetes.io/name: openpages
+spec:
+  license:
+    accept: true
+    license: Enterprise
+  fileStorageClass: ocs-external-storagecluster-cephfs
+  blockStorageClass: ocs-external-storagecluster-ceph-rbd
+  version: 9.4.2
+
+---
+apiVersion: databases.cpd.ibm.com/v1
+kind:  Db2oltpService
+metadata:
+  name: db2oltp-cr
+  namespace: cpd
+  labels:
+    icpdsupport/addOnId: db2oltp
+    app.kubernetes.io/instance: db2oltp-cr
+    app.kubernetes.io/managed-by: olm-utils
+    app.kubernetes.io/name: db2oltp
+spec:
+  license:
+    accept: true
+    license: Enterprise
+  fileStorageClass: ocs-external-storagecluster-cephfs
+  blockStorageClass: ocs-external-storagecluster-ceph-rbd
+  version: 5.1.2
+
+---
+apiVersion: ca.cpd.ibm.com/v1
+kind:  CAService
+metadata:
+  name: ca-addon-cr
+  namespace: cpd
+  labels:
+    icpdsupport/ignore-on-nd-backup: "false"
+spec:
+  license:
+    accept: true
+    license: Enterprise
+  fileStorageClass: ocs-external-storagecluster-cephfs
+  blockStorageClass: ocs-external-storagecluster-ceph-rbd
+  version: 27.2.0
+
