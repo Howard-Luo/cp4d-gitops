@@ -4,6 +4,8 @@ kind: OperandRegistry
 metadata:
   name: ibm-db2aaservice-registry
   namespace: cpd
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
   labels:
     app.kubernetes.io/instance: olm-utils
     app.kubernetes.io/managed-by: olm-utils
@@ -24,6 +26,8 @@ kind: OperandConfig
 metadata:
   name: ibm-db2aaservice-registry
   namespace: cpd
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
   labels:
     app.kubernetes.io/instance: olm-utils
     app.kubernetes.io/managed-by: olm-utils
@@ -39,6 +43,8 @@ kind: OperandRegistry
 metadata:
   name: opencontent-rabbitmq-registry
   namespace: cpd
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
   labels:
     app.kubernetes.io/instance: olm-utils
     app.kubernetes.io/managed-by: olm-utils
@@ -59,6 +65,8 @@ kind: OperandConfig
 metadata:
   name: opencontent-rabbitmq-registry
   namespace: cpd
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
   labels:
     app.kubernetes.io/instance: olm-utils
     app.kubernetes.io/managed-by: olm-utils
@@ -74,6 +82,8 @@ kind: OperandRegistry
 metadata:
   name: opencontent-elasticsearch-registry
   namespace: cpd
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
   labels:
     app.kubernetes.io/instance: olm-utils
     app.kubernetes.io/managed-by: olm-utils
@@ -94,6 +104,8 @@ kind: OperandConfig
 metadata:
   name: opencontent-elasticsearch-registry
   namespace: cpd
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
   labels:
     app.kubernetes.io/instance: olm-utils
     app.kubernetes.io/managed-by: olm-utils
@@ -109,6 +121,8 @@ kind: OperandRegistry
 metadata:
   name: ibm-cpd-ccs-registry
   namespace: cpd
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
   labels:
     app.kubernetes.io/instance: olm-utils
     app.kubernetes.io/managed-by: olm-utils
@@ -129,6 +143,8 @@ kind: OperandConfig
 metadata:
   name: ibm-cpd-ccs-registry
   namespace: cpd
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
   labels:
     app.kubernetes.io/instance: olm-utils
     app.kubernetes.io/managed-by: olm-utils
@@ -144,6 +160,8 @@ kind: Subscription
 metadata:
   name: ibm-db2u-operator
   namespace: cpd-operators
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   channel: v7.2
   installPlanApproval: Automatic
@@ -156,6 +174,8 @@ kind: Subscription
 metadata:
   name: ibm-cpd-ccs-operator
   namespace: cpd-operators
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   channel: v10.2
   installPlanApproval: Automatic
@@ -168,6 +188,8 @@ kind: Subscription
 metadata:
   name: ibm-db2aaservice-cp4d-operator
   namespace: cpd-operators
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   channel: v7.2
   installPlanApproval: Automatic
@@ -180,6 +202,8 @@ kind: Subscription
 metadata:
   name: rabbitmq-operator
   namespace: cpd-operators
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   channel: v1.0
   installPlanApproval: Automatic
@@ -192,6 +216,8 @@ kind: Subscription
 metadata:
   name: ibm-cpd-openpages-operator
   namespace: cpd-operators
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   channel: v8.2
   installPlanApproval: Automatic
@@ -204,6 +230,8 @@ kind: Subscription
 metadata:
   name: ibm-db2oltp-cp4d-operator-catalog-subscription
   namespace: cpd-operators
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   channel: v7.2
   installPlanApproval: Automatic
@@ -216,6 +244,8 @@ kind: Subscription
 metadata:
   name: ibm-ca-operator-catalog-subscription
   namespace: cpd-operators
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   channel: v27.2
   installPlanApproval: Automatic

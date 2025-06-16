@@ -2,6 +2,8 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: olm-utils-cm
+  annotations:
+    argocd.argoproj.io/sync-wave: "200"
   labels:
     app.kubernetes.io/name: olm-utils
 data:
@@ -406,10 +408,12 @@ data:
 
 ---
 apiVersion: openpages.cpd.ibm.com/v1
-kind:  OpenPagesService
+kind: OpenPagesService
 metadata:
   name: openpagesservice-cr
   namespace: cpd
+  annotations:
+    argocd.argoproj.io/sync-wave: "200"
   labels:
     icpdsupport/addOnId: openpages
     app.kubernetes.io/instance: openpagesservice-cr
@@ -422,13 +426,14 @@ spec:
   fileStorageClass: ocs-external-storagecluster-cephfs
   blockStorageClass: ocs-external-storagecluster-ceph-rbd
   version: 9.4.2
-
 ---
 apiVersion: databases.cpd.ibm.com/v1
-kind:  Db2oltpService
+kind: Db2oltpService
 metadata:
   name: db2oltp-cr
   namespace: cpd
+  annotations:
+    argocd.argoproj.io/sync-wave: "200"
   labels:
     icpdsupport/addOnId: db2oltp
     app.kubernetes.io/instance: db2oltp-cr
@@ -441,13 +446,14 @@ spec:
   fileStorageClass: ocs-external-storagecluster-cephfs
   blockStorageClass: ocs-external-storagecluster-ceph-rbd
   version: 5.1.2
-
 ---
 apiVersion: ca.cpd.ibm.com/v1
-kind:  CAService
+kind: CAService
 metadata:
   name: ca-addon-cr
   namespace: cpd
+  annotations:
+    argocd.argoproj.io/sync-wave: "200"
   labels:
     icpdsupport/ignore-on-nd-backup: "false"
 spec:
@@ -457,4 +463,3 @@ spec:
   fileStorageClass: ocs-external-storagecluster-cephfs
   blockStorageClass: ocs-external-storagecluster-ceph-rbd
   version: 27.2.0
-
