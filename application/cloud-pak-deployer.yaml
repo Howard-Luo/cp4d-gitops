@@ -19,3 +19,5 @@ spec:
     syncOptions:
     - CreateNamespace=true
     - DisableAppInstanceLabel=true
+    - RespectIgnoreDifferences=true
+    - ResourceTrackingMethod=annotation
