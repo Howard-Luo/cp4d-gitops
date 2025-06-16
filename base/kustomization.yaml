@@ -8,3 +8,4 @@ resources:
   - job-debug.yaml
   - job-deployer.yaml
   - crs.yaml
+  - operators.yaml
