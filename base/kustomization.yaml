@@ -7,5 +7,5 @@ resources:
   # - job-starter.yaml
   - job-debug.yaml
   - job-deployer.yaml
-  - crs.yaml
+  # - crs.yaml
   # - operators.yaml
