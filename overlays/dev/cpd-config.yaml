@@ -78,7 +78,7 @@ cp4d:
     instances:
     - name: ca-instance
       metastore_ref: ca-metastore
-    state: installed
+    state: removed
 
   - name: dashboard
     description: Cognos Dashboards
@@ -138,7 +138,7 @@ cp4d:
       data_size_gb: 20
       backup_size_gb: 20  
       transactionlog_size_gb: 20
-    state: installed
+    state: removed
 
   - name: db2wh
     description: Db2 Warehouse
@@ -213,7 +213,7 @@ cp4d:
 
   - name: openpages
     description: OpenPages
-    state: installed
+    state: removed
 
   - name: planning-analytics
     description: Planning Analytics
