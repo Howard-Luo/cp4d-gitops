@@ -138,7 +138,7 @@ cp4d:
       data_size_gb: 20
       backup_size_gb: 20  
       transactionlog_size_gb: 20
-    state: removed
+    state: installed
 
   - name: db2wh
     description: Db2 Warehouse
