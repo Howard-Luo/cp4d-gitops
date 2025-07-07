@@ -78,7 +78,7 @@ cp4d:
     instances:
     - name: ca-instance
       metastore_ref: ca-metastore
-    state: removed
+    state: installed
 
   - name: dashboard
     description: Cognos Dashboards
